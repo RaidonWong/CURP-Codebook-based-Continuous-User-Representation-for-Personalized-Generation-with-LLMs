@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ## Usage
 
 - First of all, you need to download the Qwen-2.5-7B-Instruct model and Contriever model
-  - [LLaMA-3-8B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
+  - [Qwen-2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
   - [Contriever](https://huggingface.co/facebook/contriever)
 Then you need to add two speicial token, `<PAD>` and `<USR_EMB>` and resize the LLM tokenizer embedding input. The `<PAD>` is for padding and the `<USR_EMB>` is for indicating the place to insert our user model.
 
