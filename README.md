@@ -50,13 +50,19 @@ tokenizer.add_special_tokens(special_tokens)
 model.resize_token_embeddings(len(tokenizer))
 ```
 
+-Secondly, you need to prepare the embedding of each history for next steps by:
 
-- Secondly, you need to pretrain a Product Quantized codebook by 
+```bash
+python encode.py
+```
+
+
+- Thirdly, you need to pretrain a Product Quantized codebook by 
 ```bash
 bash step1.sh
 ```
 
-- Thirdly, you need to align the representation with LLMs by
+- Then, you need to align the representation with LLMs by
   
 ```bash
 bash step2.sh
@@ -68,6 +74,9 @@ bash step2.sh
 ```bash
 python inference.py
 ```
+
+
+For other tasks, they share a similar process. We also provide corresponding code.
 
 
 The argument is by default. If you want to change, you can change as you need.
